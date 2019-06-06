@@ -1,0 +1,8 @@
+# Folders
+node_modules/
+.vscode/
+# Files
+package.json
+package-lock.json
+tsconfig.json
+*.map
