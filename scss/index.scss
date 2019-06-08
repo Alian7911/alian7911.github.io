@@ -16,6 +16,10 @@ $theme-colors: (
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 //@import "../node_modules/bootstrap/scss/_variables";
 
+* {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
+
 .navbar {
   padding: 0px 0.5rem;
   font-size: 1.25rem;
