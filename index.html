@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en">
 
 <head>
     <title>Alian's Repos</title>
@@ -25,28 +25,28 @@
     <script src="js/index.js"></script>
 </head>
 
-<body class="bg-dark h-100">
+<body class="bg-dark">
     <header>
-        <nav class="navbar navbar-expand bg-light sb-fog">
+        <nav class="navbar navbar-expand bg-light sb-fog border-bottom border-primary">
             <div class="nav navbar-nav">
                 <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="skills.html">Skills</a>
             </div>
         </nav>
     </header>
-    <article class="h-100">
-        <div class="container bg-light h-100 sx-shadow">
+    <article>
+        <div class="container bg-light sx-glow border-left border-right border-secondary">
             <div id="user-info" class="row" hidden>
                 <div class="col-sm d-flex align-items-center justify-content-center">
-                    <div class="sh-shadow p-2 m-2">
+                    <div class="sh-shadow p-2 m-2 border border-tertiary">
                         <img id="user-avatar" class="img-fluid"
                             src="https://avatars3.githubusercontent.com/u/41305552?s=460&v=4">
                     </div>
                 </div>
                 <div class="col-sm-8 d-flex">
-                    <div class="sh-shadow p-2 m-2 flex-fill d-flex flex-column">
+                    <div class="sh-shadow p-2 m-2 flex-fill d-flex flex-column border border-tertiary">
                         <section>
-                            <h1 id="user-login">Username</h1>
+                            <h1><span id="user-login" style="border-bottom: 2px solid dodgerblue;">Username</span></h1>
                             <h3 id="user-name">Real Name</h3>
                             <p id="user-bio" hidden>
                                 Bio
@@ -72,17 +72,18 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <hr class="my-2 w-100 sb-shadow" height="2px">
-            </div>
+            <div class="my-2 border-bottom border-glow flex-fill"></div>
+
             <div id="repo-container" class="row flex-column">
-                <!-- <div class="col-sm d-flex">
+                <div class="col-sm d-flex">
                     <div class="sh-shadow d-flex flex-fill m-2 p-2 flex-column">
-                        <h2><a href="#">Repo title</a></h2>
-                        <h5>Repo desc</h5>
-                        <h4>Repo language</h4>
+                        <div class="d-flex flex-row border-bottom border-fog">
+                            <a href="#">Repo title</a>
+                            <div class="ml-auto">Repo language</div>
+                        </div>
+                        <div>Repo desc</div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
         </div>

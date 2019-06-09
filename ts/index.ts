@@ -50,7 +50,7 @@ module GithubLoader {
                 .addClass("col-sm d-flex")
                 .append(
                     $("<div/>")
-                        .addClass("sh-shadow d-flex flex-fill m-2 p-2 flex-column")
+                        .addClass("sh-shadow d-flex flex-fill m-2 p-2 flex-column border border-tertiary")
                         .append($("<h2/>").html(`<a href="${elem.html_url}">${elem.name}</a>`))
                         .append($("<h5/>").text(elem.description).attr("hidden", "hidden"))
                         .append($("<h4/>").text(elem.language))
