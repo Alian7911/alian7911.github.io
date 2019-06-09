@@ -47,6 +47,14 @@ a.nav-link.active:hover {
   color: theme-color("tertiary");
 }
 
+.repo .repo-link {
+  text-decoration: none;
+  font-size: 1.75rem;
+}
+.repo .repo-language {
+  font-size: 1.5rem;
+}
+
 // Shadows definitions
 @each $colorname, $color in $theme-colors {
   .st-#{$colorname} {
