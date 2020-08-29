@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
-    <title>Alian's Repos</title>
+    <title>Damiano Pellegrini</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,8 +10,11 @@
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-
-    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -23,72 +26,60 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    <script src="js/common.js"></script>
     <script src="js/index.js"></script>
 </head>
 
-<body class="bg-dark">
+<body class="h-100">
     <header>
-        <nav class="navbar navbar-expand bg-light sb-fog border-bottom border-primary">
+        <nav class="navbar navbar-expand navbar-light bg-light sb-dark">
+            <a class="navbar-brand" href="#" data-role="real-name"></a>
             <div class="nav navbar-nav">
                 <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="skills.html">Skills</a>
+                <a class="nav-item nav-link" href="about.html">About</a>
             </div>
         </nav>
     </header>
-    <article>
-        <div class="container bg-light sx-glow pb-2 border border-top-0 border-tertiary">
-            <div id="user-info" class="row" hidden>
-                <div class="col-sm d-flex align-items-center justify-content-center">
-                    <div class="sh-shadow p-2 m-2 border border-tertiary">
-                        <img id="user-avatar" class="img-fluid"
-                            src="https://avatars3.githubusercontent.com/u/41305552?s=460&v=4">
-                    </div>
-                </div>
-                <div class="col-sm-8 d-flex">
-                    <div class="sh-shadow p-2 m-2 flex-fill d-flex flex-column border border-tertiary">
-                        <section>
-                            <h1><span id="user-login" class="border-bottom border-primary">Username</span></h1>
-                            <h3 id="user-name">Real Name</h3>
-                            <p id="user-bio" hidden>
-                                Bio
-                            </p>
-                            <p id="user-company" hidden>
-                                Company
-                            </p>
-                            <p id="user-location" hidden>
-                                Location
-                            </p>
-                            <p id="user-email" hidden>
-                                Email
-                            </p>
-                        </section>
-                        <div class="d-flex mt-auto mb-2">
-                            <div id="user-followers" class="col-sm text-center font-weight-bold">
-                                Followers
-                            </div>
-                            <div id="user-following" class="col-sm text-center font-weight-bold">
-                                Following
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="my-2 border-bottom border-glow flex-fill"></div>
 
-            <div id="repo-container" class="row flex-column">
-                <!-- <div class="col-sm d-flex">
-                    <div class="sh-shadow d-flex flex-fill m-2 p-2 flex-column">
-                        <div class="d-flex flex-row border-bottom border-fog">
-                            <a href="#">Repo title</a>
-                            <div class="ml-auto">Repo language</div>
-                        </div>
-                        <div>Repo desc</div>
-                    </div>
-                </div> -->
+    <main class="w-100 h-100">
+        <!-- LANDING -->
+        <div class="parallax d-flex flex-column justify-content-center align-items-center">
+            <h1 class="display-1 text-light text-sh-dark mt-auto" data-role="real-name"></h1>
+            <h1 class="display-4 text-light text-sh-dark mb-auto">Software Developer</h1>
+            <div class="d-flex flex-column align-items-center text-light">
+                <i class="fa fa-arrow-down text-sh-dark" aria-hidden="true" style="font-size: 20px;"></i>
+                <a class="text-sh-dark" style="font-size: 20px;font-weight: 300;">Scroll down</a>
             </div>
         </div>
+        <!-- CONTENT -->
+        <div class="container-fluid st-dark">
+            <section class="row py-4" data-role="repo-container">
+                <div class="col-md-4 mb-4" data-role="repo-template" hidden>
+                    <article class="card p-4 h-100 sh-fog">
+                        <h2 data-role="repo-title">Title
+                            <span class="badge badge-pill badge-dark" data-role="repo-language">C#</span>
+                        </h2>
+                        <div data-role="repo-description">Description</div>
+                        <div>
+                            <i class="fa fa-link" aria-hidden="true"></i> <a  data-role="repo-homepage" href="alians7911.github.io">Site</a>
+                        </div>
+                        <div class="mt-auto"></div> <!--SPACER-->
+                        <div class="d-flex flex-row justify-content-between my-2">
+                            <div>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <a data-role="repo-stars"></a>
+                            </div>
+                            <div>
+                                <i class="fa fa-code-fork" aria-hidden="true"></i>
+                                <a data-role="repo-forks"></a>
+                            </div>
+                        </div>
+                        <a class="btn btn-outline-dark" href="#" role="button" data-role="repo-button">Check it out on GitHub</a>
+                    </article>
+                </div>
+            </section>
         </div>
-    </article>
+    </main>
 </body>
 
 </html>
