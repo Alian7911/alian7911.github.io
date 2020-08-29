@@ -1,8 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.User_URL = 'https://api.github.com/users/Alian7911';
-var User = (function () {
-    function User() {
+export let User_URL = 'https://api.github.com/users/Alian7911';
+export class User {
+    constructor() {
         this.login = "";
         this.id = 0;
         this.node_id = "";
@@ -36,11 +34,9 @@ var User = (function () {
         this.created_at = new Date(Date.now());
         this.updated_at = new Date(Date.now());
     }
-    return User;
-}());
-exports.User = User;
-var Repository = (function () {
-    function Repository() {
+}
+export class Repository {
+    constructor() {
         this.id = 0;
         this.node_id = "";
         this.name = "";
@@ -115,15 +111,13 @@ var Repository = (function () {
         this.watchers = 0;
         this.default_branch = "";
     }
-    return Repository;
-}());
-exports.Repository = Repository;
+}
 $(document).ready(function () {
     $.ajax({
-        url: exports.User_URL,
+        url: User_URL,
         method: 'GET',
     }).done(function (responseData) {
-        var user = responseData;
+        let user = responseData;
         $('[data-role=real-name]').text(user.name);
     });
 });
