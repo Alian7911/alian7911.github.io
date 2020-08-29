@@ -1,6 +1,6 @@
-export let User_URL = 'https://api.github.com/users/Alian7911';
-export class User {
-    constructor() {
+export var User_URL = 'https://api.github.com/users/Alian7911';
+var User = (function () {
+    function User() {
         this.login = "";
         this.id = 0;
         this.node_id = "";
@@ -34,9 +34,11 @@ export class User {
         this.created_at = new Date(Date.now());
         this.updated_at = new Date(Date.now());
     }
-}
-export class Repository {
-    constructor() {
+    return User;
+}());
+export { User };
+var Repository = (function () {
+    function Repository() {
         this.id = 0;
         this.node_id = "";
         this.name = "";
@@ -111,13 +113,15 @@ export class Repository {
         this.watchers = 0;
         this.default_branch = "";
     }
-}
+    return Repository;
+}());
+export { Repository };
 $(document).ready(function () {
     $.ajax({
         url: User_URL,
         method: 'GET',
     }).done(function (responseData) {
-        let user = responseData;
+        var user = responseData;
         $('[data-role=real-name]').text(user.name);
     });
 });
