@@ -7,6 +7,5 @@ ts/
 package.json
 package-lock.json
 tsconfig.json
-*.map
 user.example.json
 repo.example.json
