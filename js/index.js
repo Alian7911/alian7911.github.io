@@ -1,5 +1,5 @@
 "use strict";
-var common = require("./common");
+var common = exports;
 $(document).ready(function () {
     $.ajax({
         url: common.User_URL,
