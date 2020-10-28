@@ -1,6 +1,6 @@
 "use strict";
 var exports = {__esModule: true};
-exports.User_URL = 'https://api.github.com/users/Alian7911';
+exports.User_URL = 'https://api.github.com/users/DamianoPellegrini';
 var User = (function () {
     function User() {
         this.login = "";
